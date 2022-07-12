@@ -17,18 +17,18 @@
 
 // GETELEMENTBYID //
 //console.log(document.getElementById('header-title'));
-const headerTitle = document.getElementById('header-title');
-//var header = document.getElementById('main-header');
+//const headerTitle = document.getElementById('header-title');
+//const header = document.getElementById('main-header');
 //console.log(headerTitle);
 //headerTitle.textContent = 'Hello';
 //headerTitle.innerText = 'Goodbye';
 // console.log(headerTitle.innerText);
 // headerTitle.innerHTML = '<h3>Hello</h3>';
-headerTitle.style.borderBottom = 'solid 3px #000';
+//header.style.borderBottom = 'solid 3px #000';
 
 // GETELEMENTSBYCLASSNAME //
-// var items = document.getElementsByClassName('list-group-item');
-// console.log(items);
+/*const items = document.getElementsByClassName('list-group-item');
+console.log(items);*/
 // console.log(items[1]);
 // items[1].textContent = 'Hello 2';
 // items[1].style.fontWeight = 'bold';
@@ -37,8 +37,8 @@ headerTitle.style.borderBottom = 'solid 3px #000';
 // // Gives error
 // //items.style.backgroundColor = '#f4f4f4';
 
-// for(var i = 0; i < items.length; i++){
-//   items[i].style.backgroundColor = '#f4f4f4';
+/* for(let i = 0; i < items.length; i++){
+items[i].style.backgroundColor = '#f4f4f4';*/
 // }
 
 // GETELEMENTSBYTAGNAME //
@@ -57,8 +57,8 @@ headerTitle.style.borderBottom = 'solid 3px #000';
 // }
 
 // QUERYSELECTOR //
-// var header = document.querySelector('#main-header');
-// header.style.borderBottom = 'solid 4px #ccc';
+let header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px #ccc';
 
 // var input = document.querySelector('input');
 // input.value = 'Hello World'
@@ -76,23 +76,22 @@ headerTitle.style.borderBottom = 'solid 3px #000';
 // secondItem.style.color = 'coral';
 
 // QUERYSELECTORALL //
-// var titles = document.querySelectorAll('.title');
+let titles = document.querySelectorAll('.title');
 
-// console.log(titles);
-// titles[0].textContent = 'Hello';
+console.log(titles);
+titles[0].textContent = 'Commodity';
 
-// var odd = document.querySelectorAll('li:nth-child(odd)');
-// var even= document.querySelectorAll('li:nth-child(even)');
+let odd = document.querySelectorAll('li:nth-child(odd)');
+let even= document.querySelectorAll('li:nth-child(even)');
 
-// for(var i = 0; i < odd.length; i++){
-//   odd[i].style.backgroundColor = '#f4f4f4';
-//   even[i].style.backgroundColor = '#ccc';
-// }
+for(let i = 0; i < odd.length; i++) {
+    odd[i].style.backgroundColor = '#f4f4f4';
+even[i].style.backgroundColor = '#ccc'; }
 
 
 
 // TRAVERSING THE DOM //
-var itemList = document.querySelector('#items');
+//var itemList = document.querySelector('#items');
 // parentNode
 // console.log(itemList.parentNode);
 // itemList.parentNode.style.backgroundColor = '#f4f4f4';
@@ -135,6 +134,7 @@ var itemList = document.querySelector('#items');
 
 // createElement
 
+/*
 // Create a div
 var newDiv =  document.createElement('div');
 
@@ -159,5 +159,4 @@ var h1 = document.querySelector('header h1');
 console.log(newDiv);
 
 newDiv.style.fontSize = '30px';
-
-container.insertBefore(newDiv, h1);
+*/
