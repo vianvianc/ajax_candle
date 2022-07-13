@@ -91,7 +91,7 @@ even[i].style.backgroundColor = '#ccc'; }
 
 
 // TRAVERSING THE DOM //
-//var itemList = document.querySelector('#items');
+//let itemList = document.querySelector('#items');
 // parentNode
 // console.log(itemList.parentNode);
 // itemList.parentNode.style.backgroundColor = '#f4f4f4';
@@ -99,7 +99,7 @@ even[i].style.backgroundColor = '#ccc'; }
 
 // parentElement
 // console.log(itemList.parentElement);
-// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+//itemList.parentElement.style.backgroundColor = '#f4f4f4';
 // console.log(itemList.parentElement.parentElement.parentElement);
 
 // childNodes
@@ -113,7 +113,8 @@ even[i].style.backgroundColor = '#ccc'; }
 // console.log(itemList.firstChild);
 // // firstElementChild
 // console.log(itemList.firstElementChild);
-// itemList.firstElementChild.textContent = 'Hello 1';
+
+//itemList.firstElementChild.textContent = 'Hello 1';
 
 
 // lastChild
@@ -130,7 +131,7 @@ even[i].style.backgroundColor = '#ccc'; }
 // previousSibling
 // console.log(itemList.previousSibling);
 // previousElementSibling
-// console.log(itemList.previousElementSibling);itemList.previousElementSibling.style.color = 'green';
+//console.log(itemList.previousElementSibling);itemList.previousElementSibling.style.color = 'green';
 
 // createElement
 
@@ -160,3 +161,11 @@ console.log(newDiv);
 
 newDiv.style.fontSize = '30px';
 */
+let button = document.getElementById('button').addEventListener('click', buttonClick);
+
+function buttonClick(e){
+    //console.log('Button clicked');
+   /* document.getElementById('header-title').textContent = 'Changed';
+    document.querySelector('#main').style.backgroundColor = '#f4f4f4';*/
+    console.log(e.target.id);
+}
